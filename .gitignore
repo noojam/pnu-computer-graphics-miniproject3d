@@ -1,0 +1,78 @@
+# ============================================================
+# P3 저장소 .gitignore
+#   - P3-Starter-Pack/ : 원본 팩 (첫 커밋, 수정하지 않음)
+#   - graphics-p3/     : Unity 6000.0.62f1 프로젝트
+# 패턴 앞에 **/ 를 붙여 하위 폴더의 Unity 프로젝트에도 적용되게 함
+# ============================================================
+
+# ---------- Unity: 자동 생성 폴더 (커밋 금지, 수 GB) ----------
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Ll]ogs/
+**/[Uu]ser[Ss]ettings/
+**/[Mm]emoryCaptures/
+**/[Rr]ecordings/
+
+# 빌드 결과물 (WebGL 빌드는 제출/시연 때만 따로 만듦)
+**/[Bb]uild/
+**/[Bb]uilds/
+
+# Asset Store 도구 등이 만드는 폴더
+**/[Aa]ssets/AssetStoreTools*
+**/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# Gradle / Android
+**/.gradle/
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# 크래시 리포트
+sysinfo.txt
+crashlytics-build.properties
+
+# 자동 생성된 스트리밍 에셋 (Addressables 등)
+**/[Aa]ssets/[Ss]treamingAssets/aa.meta
+**/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Unity가 IDE용으로 다시 만드는 프로젝트 파일
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# ---------- IDE / 에디터 ----------
+.vs/
+.vscode/
+.idea/
+*.swp
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---------- Python 트랙 (참고용으로 실행할 때 생기는 파일) ----------
+__pycache__/
+*.py[cod]
+.venv/
+
+# ---------- 시연 녹화 원본 (제출 zip에 따로 넣음) ----------
+*.mp4
+*.mov
